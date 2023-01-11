@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+
+    <style>
+        #third {
+            color: blueviolet;
+        }
+
+        .fire {
+            color: aqua;
+        }
+
+        h1 {
+            color: brown !important;
+        }
+
+        h1 {
+            color: red;
+            color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>My special heading-1</h1>
+    <h1>My special heading-2</h1>
+    <h1 style="color: burlywood;" class="fire" id="third">My special heading-3</h1>
+    <h1>My special heading-4</h1>
+</body>
+
+</html>
